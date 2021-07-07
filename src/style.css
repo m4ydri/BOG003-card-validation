@@ -1,0 +1,275 @@
+.none{
+    display: none;
+}
+.invisible{
+    display: block;
+}
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family:'Roboto', sans-serif;
+}
+body{
+    background: #f1fff5;
+}
+.main{
+    width: 90vw;
+    height: 100vh;
+    padding: 0px;
+    margin-left: 10px;
+}
+.header{
+    height: 55px;
+    display: flex;
+    padding: 10px 0px 0px 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #f1fff5;
+    position: fixed;
+    z-index: 1000;
+}
+.title{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding-top: 15px;
+}
+.h5-subtitle{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    padding-top: 6px;
+}
+.home-products{
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+    padding: 15px;
+}
+.page1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 40px;
+    padding-top: 12px;
+    background: white;;
+} 
+.paragraphs{
+    font-size: 16px;
+    padding: 5px;
+    background: white;
+    line-height: 1.40em;
+    width: 600px;
+}
+.donate{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: white;
+}
+.strong-donate{
+    font-size: 15px;
+    background: #dbf5e3;
+}
+.button{
+    border-radius: 30px;
+    border: 1px solid black;
+    width: 80%;
+    height: 40px;
+    margin-top: 30px;
+    padding:2px 10px;
+    margin-left: 30px;
+    background: #dbf5e3;
+}
+.footer{
+    width: 100%;
+    height: 50%;
+    margin-left: 40px;
+    margin-right: 40px;
+    background: white;
+}
+.nav-footer{
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 6%;
+    background: white;
+}
+.message-donate{
+    width: 100%;
+    margin: 12px;
+    margin-left: 1px;
+    font-size: 18px;
+    background: white;
+}
+.our-foundation{
+    margin: 7px;
+    font-size: 15px;
+    background: white;
+}
+.foundation-data{
+    font-size: 12px;
+    margin:7px; 
+}
+.schedule{
+    font-size: 15px;
+    margin: 7px;
+}
+.time{
+    font-size: 12px;
+    margin: 7px;
+}
+.politics-questions{
+    font-size: 15px;
+    margin: 7px;
+}
+.span{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+.img{
+    width: 350px;
+    height: 174px;
+}
+.donate{
+    font-size: 18px;
+}
+/*------------- Estilos Generales de la Tarjeta------------*/
+
+#container{ 
+    width: 100%;
+    max-width: 1000%;
+    padding: 40px 20px;
+    margin: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    align-items: center;
+}
+.card{
+    width: 100%;
+    max-width:510px;
+    position: relative;
+    color: #fff;
+    transition: .3s ease all;
+    transform: rotateY(0deg);
+    transform-style:preserve-3d;
+    backface-visibility: hidden;
+    cursor: pointer;
+    z-index: 2;
+}
+.card.active{
+    transform: rotateY(100deg);
+}
+.lead{
+    width: 100%;
+    background: rgb(5, 5, 5);
+}
+.card > div{
+    padding: 30px;
+    border-radius: 15px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 10px 0 rgba(90,116,148,0.3) ;
+}
+.brand{
+    width: 482px;
+    height: 70px;
+    display: flex;
+    align-items: flex-end;
+}
+.chip{
+    width: 58px;
+    height: 100px;
+    margin-left: 10px;
+    padding-top: 51px;    
+}
+.visa{
+    width: 65px;
+    height:46px;
+    margin-right: 10px;
+}
+.data{
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 90%;
+    height: 120px;
+}
+.data .group .label{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.data .group .number,
+.data .group .name,
+.data .group .expiration{
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+.data .flexbox{
+    width: 100px;
+    height:30px;
+    display: flex;
+    margin-left: 350px;
+}
+/*----------Boton abrir formulario----------*/
+.container-button{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 20px;
+    background:#f1fff5;
+    color: #fff;
+    position: relative;
+    top: -25px;
+    z-index: 2;
+    border-radius: 100%;
+    box-shadow: -5px 4px 8px rgba(24,56,182,0.4);
+    padding: 5px;
+    transition: all .2s ease;
+    border: none;
+    display: flex;
+}
+.button-formulario{
+    width: 100px;
+    font-size: 35px;
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+.container-button.active{
+    transform: rotate(45deg);
+}
+/*----------Formulario----------*/
+.formulario-tarjeta{
+    width: 66%;
+    max-width: 510px;
+    height: 166px;
+    position: relative;
+    z-index: 3;
+    background: brown;
+    display: flex;
+}
+.grupo{
+    
+}
+
