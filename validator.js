@@ -2,21 +2,20 @@
 const validator = {
   isValid : function(numeroTarjeta){ 
     const newNumeroTarjeta = numeroTarjeta.replaceAll(" ", "");
-    const lista = newNumeroTarjeta.split("");
+    const lista = newNumeroTarjeta.split("") .reverse();
     const listaInt = lista.map((e) => parseInt(e));
     let sum = 0;
     //cada elemento impar de nuestro array se pasara tal cual al nuevo array
     for(let i = 0; i < listaInt.length; i++) {
       let resultado = listaInt[i]; 
-      if(i % 2 === 0) {
-        resultado = listaInt[i] * 2;
+      if(i % 2 !== 0) {  
+        resultado = listaInt[i] * 2; 
         if(resultado >= 10) {
-          resultado = (resultado - 10) + 1;
+          resultado = (resultado - 10) + 1; 
         }
       }
       sum = sum + resultado;
-    }
-    console.log(sum)
+    } 
     //Se evalua la suma de valores, si es divisible entre 10 con residuo 0 correspondera a una tarjeta valida.
     if(sum % 10 === 0 ){
       return true;
