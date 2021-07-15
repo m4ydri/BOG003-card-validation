@@ -2,17 +2,15 @@
 <html>
     <head>
       	<meta charset="utf-8">
-      	<title>Fundación Puloi & Micha</title>
+      	<title>Fundación Puloi y Micha</title>
       	<link rel="stylesheet" href="style.css" />
-		<link rel="ico" type="image/x-ico" href="/src/favicon.ico">
-		<script src="index.js" type="module"></script>
     </head>
     <body>
-		<main class="main">
+		<main class="main"> 
 			<div>
 				<header class="header">
 					<div>
-						<h1 class="title">PULOI & MICHA</h1>
+						<h1 class="title">PULOI y MICHA</h1>
 						<h5 class="h5-subtitle">FUNDACIÓN </h5>
 					</div>
 					<div class="home-products">
@@ -46,17 +44,18 @@
 								</p>
 							</div>
 							<div>
-								<P class="paragraphs">
+								<p class="paragraphs">
 									Ahh, se me olvidaba, nos cambiaron de casa  tambien es bonita y es  grande solo para nosotros,
 									ella dice que somos muchos pero que nunca nos dejara solos.Ya no los aburrire más con mi historia.
-								</P>
+								</p>
 								<p class="paragraphs"> 
 									Los invito a que nos apoyen, nos cuiden y no nos maltraten. 
 									No hagan publicidad con nosotros si no obtenemos beneficios.
 								</p>
 							</div>
 							<div>
-								<button class="button" id="button"><strong class="strong-donate">Atrevete a Donar</strong></button>
+								<a href="#container" class="button" id="btn_donate"><strong class="strong-donate">Atrevete a Donar</strong></a>
+								<div class="none"></div>
 							</div>
 						</div>
 						<div> 
@@ -80,45 +79,48 @@
 							<div class="data">
 								<div class="group" id="number">
 									<p class="label">Número Tarjeta</p>
-									<p class="number">#### #### #### ####</p>
+									<p class="number" id="num_tarjeta">#### #### #### ####</p>
 								</div>
 								<div class="group" id="name">
 									<p class="label">Nombre Tarjeta</p>
-									<p class="name">Angel Laguna</p>
+									<p class="name" id="name_tarjeta">xxxxxxx xxxxxxxxxxx</p>
 								</div>
 								<div class="flexbox"> 
 									<div class="group" id="expiration">
 										<p class="label" id="">Expiración</p>
-										<p class="expiration"><span class="month">AA</span> / <span class="year">MM</span></p>
+										<p class="expiration"><span class="month" id="text_month">MM</span> / <span id="text_year" class="year">AA</span></p>
 									</div>
 								</div>
 							</div>
 						</div>
-					</section>
+					</section> 
 
 					<!--------Boton abrir formulario ------->
 					<div class="container-button">
-						<button class="button-formulario" id="button-formulario"> + </button>
+						<button class="button-formulario" id="btnShow"> + </button>
 					</div>
 
 					<!--------------Formulario-------->
 
 					<form action="" id="formulario" class="formulario-tarjeta">
-						<div class="grupo">
-							<label for="inputNumber">Numero Tarjeta</label>
-							<input type="text" id="inputNumber" maxlength="19" autocomplete="off">
-						</div> 
-						<div class="grupo">
-							<label for="inputName">Nombre Tarjeta</label>
-							<input type="text" id="inputName" maxlength="19" autocomplete="off">
-						</div>  
-						<div class="flexbox">
-							<div class="grupo expira">
-								<label for="selectMes">Expiración</label> 
-								<input type="text" id="inputExpiracion" maxlength="19" autocomplete="off">
+						<div class="container_form">
+							<div class="container_item-form">
+								<label for="inputNumber" class="">Número Tarjeta</label>
+								<input class="" type="text" id="input_number" maxlength="19" autocomplete="off">
 							</div> 
+							<div class="container_item-form">
+								<label for="inputName" class="">Nombre Tarjeta</label>
+								<input class="input" type="text" id="input_name" maxlength="19" autocomplete="off">
+							</div>  
+							<div class="container_item-form">
+								<label for="selectMes" class="">Expira</label> 
+								<div class="container_item-expiration">
+									<input class="expiration_date" type="number" id="input_month" placeholder="Mes" maxlength="2" autocomplete="off">
+									<input class="expiration_date" type="number" id="input_year" placeholder="Año" maxlength="4" autocomplete="off">
+								</div>
+							</div>
+							<button class="btn_validate" id="buttonValidation">Validar</button>
 						</div>
-						<button id="buttonValidation">Validar</button>
 					</form>
 				</div>
 				
@@ -146,13 +148,13 @@
 						</div>
 					</nav>
 					<div class="span">
-						<span class="span"> <strong>© 2023 by Puloi & Michu. Creado por Mayerly R.</strong></span class="span">
+						<span class="span"> <strong>© 2023 by Puloi y Micha. Creado por Mayerly R.</strong></span>
 					</div>
 				</footer>
 			</div>
 		</main> 
 		<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin= "anonymous"></script>
-		
+		<script src="index.js" type="module"></script>
     </body>
 </html>
 
