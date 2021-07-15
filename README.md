@@ -16,6 +16,6 @@ En esta parte se describe la funcionalidad del proyecto descrito en estos pasos 
 
 
 ## Imagenes
-<img src="src/Logos/Desktop-1.png" alt="Mi figma"/>
-![](https://github.com/m4ydri/BOG003-card-validation/README.md/src/Logos/Destktop-1.png)
+<img src="https://github.com/m4ydri/BOG003-card-validation/blob/master/src/Logos/Desktop%20-%201.png" alt="Mi figma"/>
+<img src="https://github.com/m4ydri/BOG003-card-validation/blob/master/src/Logos/Desktop%20-%202.png" alt="Mi figma"/>
 
